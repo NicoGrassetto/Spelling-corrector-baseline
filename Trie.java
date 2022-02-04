@@ -1,7 +1,3 @@
-package com.company;
-
-import com.company.TrieNode;
-
 public class Trie {
     private TrieNode root;
 
@@ -11,11 +7,12 @@ public class Trie {
 
     public void insert(String word) {
         TrieNode current = root;
-
-        for (char l : word.toCharArray()) {
-            current = current.getChildren().computeIfAbsent(l, c -> new TrieNode());
+        if (word != null) {
+            for (char l : word.toCharArray()) {
+                current = current.getChildren().computeIfAbsent(l, c -> new TrieNode());
+            }
+            current.setEndOfWord(true);
         }
-        current.setEndOfWord(true);
     }
 
     public boolean delete(String word) {
