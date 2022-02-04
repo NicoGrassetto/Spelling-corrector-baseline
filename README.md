@@ -1,4 +1,3 @@
-# spell-checker-baseline
 ![spell checker baseline logo](spell-checker-baseline-logo.png)</br>
 A baseline for chatbots that does not take into account context (+ with I/O capabilities).</br>
 To initialise the question handler create an instance of QuestionHandler and pass in as arguments a .txt file containing the questions and the answers separated by a pipe symbol (|). Second pass in the keyboard layout you expect the user to be using. Note that it is qwerty by default. (For more about the format, just check the qwerty.txt file)</br>
