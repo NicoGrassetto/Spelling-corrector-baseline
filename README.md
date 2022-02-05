@@ -16,7 +16,7 @@ System.out.println("Possible replacement word for rituialisn: based on IBD\n" + 
 System.out.println("Possible replacement word for English: based on IBD\n" + checker.IndexBasedCheck("English"));
 ```
 Ideas for potential improvements: </br>
-- See if taking n-grams improve the system.
+- See if taking substrings helps.
 - Use a combination of both LD and IB.
 
 
