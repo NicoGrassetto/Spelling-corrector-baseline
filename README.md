@@ -15,12 +15,9 @@ System.out.println("Possible replacement word for rituialisn: based on IBD\n" + 
 
 System.out.println("Possible replacement word for English: based on IBD\n" + checker.IndexBasedCheck("English"));
 ```
-The reader is strongly advised to use this as a baseline for benchmark testing and NOT as an actual chatbot.
-Moreover some obvious improvements can be made. Some of which are:
-- Making the chatbot's code more verstatile by allowing the user to use multiple fitness functions.
-- There are some errors to fix in the probabilities (which technically does not impact the final result)
-- One could take advantage of different data structures to make it more scalable.
-- The typo detection could be made more robust by not just calculating its neighbours but also by computing the distance to each possible keycap. This would relax the probability of typo as one is still quite likely to press k rather than p in a typo.
+Ideas for potential improvements: </br>
+- See if taking n-grams improve the system.
+- Use a combination of both LD and IB.
 
 
 
